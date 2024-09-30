@@ -200,6 +200,29 @@
                 flex-basis: 100%;
             }
         }
+
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-link .material-icons {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -286,7 +309,10 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-info">
-                <p>Email: info@ouryard.ai</p>
+                <a href="mailto:info@ouryard.ai" class="email-link">
+                    <span class="material-icons">email</span>
+                    info@ouryard.ai
+                </a>
             </div>
         </div>
     </section>
