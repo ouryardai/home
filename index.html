@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurYard - Simplifying Housing Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2ECC71;
+            --secondary-color: #3498DB;
+            --text-color: #34495E;
+            --background-color: #FFFFFF;
+            --accent-color: #F39C12;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            background-color: var(--background-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #E67E22;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex-basis: calc(33.333% - 20px);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .success-data {
+            background-color: #F9F9F9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .founders {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .founder {
+            flex-basis: calc(50% - 20px);
+            text-align: center;
+        }
+
+        .founder img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .feature, .founder {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">OurYard</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <!-- <a href="#success">Impact</a> -->
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Simplify Housing Development</h1>
+            <p>OurYard empowers small-scale developers by streamlining complex regulations and processes</p>
+            <a href="#contact" class="btn">Contact Us To Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>How We Help</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="/api/placeholder/80/80" alt="Regulation Icon">
+                    <h3>Simplified Regulations</h3>
+                    <p>Navigate zoning laws and building codes with ease</p>
+                </div>
+                <div class="feature">
+                    <img src="/api/placeholder/80/80" alt="Time Icon">
+                    <h3>Time-Saving Solutions</h3>
+                    <p>Reduce paperwork and streamline permit processes to accelerate your projects</p>
+                </div>
+                <div class="feature">
+                    <img src="/api/placeholder/80/80" alt="Support Icon">
+                    <h3>Expert Support</h3>
+                    <p>Access our network of professionals to ensure compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="success" class="section success-data">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">200+</div>
+                    <p>Developers Assisted</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <p>Housing Units Facilitated</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">40%</div>
+                    <p>Time Saved on Processes</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="team" class="section success-data">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="founders">
+                <div class="founder">
+                    <img src="/api/placeholder/200/200" alt="Matthias">
+                    <h3>Matthias</h3>
+                    <p>Co-founder & CEO</p>
+                    <p>Engineering Manager & Housing Enthusiast</p>
+                </div>
+                <div class="founder">
+                    <img src="/api/placeholder/200/200" alt="Skye">
+                    <h3>Skye</h3>
+                    <p>Co-founder & CTO</p>
+                    <p>Machine Learning Engineer & Housing Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p>Email: info@ouryard.ai</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OurYard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
