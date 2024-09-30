@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OurYard - Simplifying Housing Development</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         :root {
             --primary-color: #2ECC71;
@@ -164,6 +165,20 @@
             margin-bottom: 20px;
         }
 
+        .founder-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .founder-image:hover {
+            transform: scale(1.05);
+        }
+
         .contact {
             background-color: var(--primary-color);
             color: white;
@@ -208,30 +223,28 @@
             <a href="#contact" class="btn">Contact Us To Get Started</a>
         </div>
     </section>
-
     <section id="features" class="section">
         <div class="container">
             <h2>How We Help</h2>
             <div class="features">
                 <div class="feature">
-                    <img src="/api/placeholder/80/80" alt="Regulation Icon">
+                    <span class="material-icons" style="font-size: 80px; color: var(--primary-color);">gavel</span>
                     <h3>Simplified Regulations</h3>
                     <p>Navigate zoning laws and building codes with ease</p>
                 </div>
                 <div class="feature">
-                    <img src="/api/placeholder/80/80" alt="Time Icon">
+                    <span class="material-icons" style="font-size: 80px; color: var(--primary-color);">schedule</span>
                     <h3>Time-Saving Solutions</h3>
                     <p>Reduce paperwork and streamline permit processes to accelerate your projects</p>
                 </div>
                 <div class="feature">
-                    <img src="/api/placeholder/80/80" alt="Support Icon">
+                    <span class="material-icons" style="font-size: 80px; color: var(--primary-color);">support_agent</span>
                     <h3>Expert Support</h3>
                     <p>Access our network of professionals to ensure compliance</p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- <section id="success" class="section success-data">
         <div class="container">
             <h2>Our Impact</h2>
@@ -251,19 +264,17 @@
             </div>
         </div>
     </section> -->
-
     <section id="team" class="section success-data">
         <div class="container">
             <h2>Meet Our Team</h2>
             <div class="founders">
                 <div class="founder">
-                    <img src="/api/placeholder/200/200" alt="Matthias">
+                    <img src="matthias.jpeg" alt="Matthias" class="founder-image">
                     <h3>Matthias</h3>
-                    <p>Co-founder & CEO</p>
-                    <p>Engineering Manager & Housing Enthusiast</p>
+                    <p>Co-founder & CEO & Housing Enthusiast</p>
                 </div>
                 <div class="founder">
-                    <img src="/api/placeholder/200/200" alt="Skye">
+                    <img src="skye.jpeg" alt="Skye" class="founder-image">
                     <h3>Skye</h3>
                     <p>Co-founder & CTO</p>
                     <p>Machine Learning Engineer & Housing Enthusiast</p>
@@ -271,7 +282,6 @@
             </div>
         </div>
     </section>
-
     <section id="contact" class="section contact">
         <div class="container">
             <h2>Get In Touch</h2>
